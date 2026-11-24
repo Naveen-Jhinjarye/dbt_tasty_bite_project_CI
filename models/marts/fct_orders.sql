@@ -40,6 +40,7 @@ select
     c.city as customer_city_at_order,
     o.order_amount,
     o.order_total,
+    o.order_discount_amount / nullif(o.order_amount, 0) as discount_pct,
     i.item_count,
     i.total_quantity
 from orders o
