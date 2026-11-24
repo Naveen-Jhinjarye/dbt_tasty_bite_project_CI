@@ -2,3 +2,4 @@ target/
 dbt_packages/
 logs/
 snapshots/
+models/marts/dim_date.sql
