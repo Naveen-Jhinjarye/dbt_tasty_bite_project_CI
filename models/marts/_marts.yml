@@ -54,6 +54,8 @@ models:
           - relationships: {to: ref('dim_customer'), field: customer_key}
       - name: order_total
         description: Final amount paid, after tax and discounts.
+      - name: discount_pct
+        description: Discount as a share of order amount.
 
   - name: fct_order_items
     description: One row per order line with cost, profit and margin.
